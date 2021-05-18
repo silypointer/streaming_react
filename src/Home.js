@@ -23,7 +23,7 @@ function Home() {
   }
   return (
     <>
-      <Carousel />
+      
       <div className="row" key={Math.random().toString()}>
         {videos?.length > 0
           ? videos.map((video) => {
@@ -45,7 +45,7 @@ function Home() {
 
                     <div className="card-body" key={Math.random().toString()}>
                       <h3 className="card-title" key={Math.random().toString()}>
-                        {video.replace(".mp4", "")}
+                        Video Title: {video.replace(".mp4", "")}
                       </h3>
                       <p className="card-text" key={Math.random().toString()}>
                         <Link
